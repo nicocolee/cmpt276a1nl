@@ -1,0 +1,117 @@
+.bg {
+    width: 100%;
+    border: black 1;
+}
+
+.first {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 100;
+    font-size: 27px;
+}
+
+.second {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(158, 8, 13);
+    font-size: 18px;
+}
+
+body {
+    color:black;
+    background-color: rgb(158, 8, 13);
+    padding: 20px;
+    padding-left: 30px;
+
+}
+
+main {
+    border: 1px solid #c3ced6;
+    border-radius: 4px;
+    background-color: #d7dfe4 ;
+    width: 80%;
+    padding: 5px;
+    
+}
+
+section {
+    background-color: #fafafa;
+    padding-left: 25px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-right: 100px;
+    border-top: #363636 40px solid;
+    border-bottom: #363636 40px solid;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+table {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid  #b8b8b8;
+    font-size: 13px;
+    text-align: left;
+    padding: 4px;
+}
+
+th {background-color: #d1d1d1;}
+[type="text"] {
+    border: 1px solid #9b9a9a;
+    border-radius: 2px;
+    width: 40px;
+    height: 25px;
+}
+
+.button {
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(158, 8, 13);
+    color:whitesmoke;
+    padding: 8px 8px;
+    text-align: center;
+    font-size: 15px;
+    margin: 3px 1px;
+}
+.mean {padding: 8px 20px;}
+ /* mean button */
+
+/* "red" is a class, so use . infront; "navigate" is not a class, so use # infront
+/* .red { 
+    background-color: cornflowerblue;
+} */
+/* figure {
+    border: 1pt solid;
+    background-color: darkseagreen;
+    padding: 500px;
+    width: 200px;
+    /* margin: 10px; */
+    /* position: sticky;
+} */ 
+/* 
+#navigate1 {
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+    border: 1px solid rosybrown;
+    width: 200px;
+    border-radius: 30%;
+    /* float: left; */
+    /* position: fixed;
+    top: 50px;
+    left: 125px;
+} */ 
+
+
+
+/* form {
+    clear: left ;
+} */
+
+#sfu_link:hover {
+    background-color: grey;
+}

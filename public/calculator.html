@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Grade Calculator</title>
+        <link rel="stylesheet" href="./stylesheets/style.css">
+    </head>
+    
+    <body>
+        <div border-width:thick ></div>
+        <section>
+        <header>
+            <h1 class="first">Grade Calculator</h1>
+        </header>
+        <main>
+            <h2 class="second">Activities</h2>
+            <p>Give grades to the numeric activities:</p><br>
+            <div>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Short Name</th>
+                        <th>Weight</th>
+                        <th>Grade</th>
+                        <th>Percent</th>
+                    </tr>
+                    <tr>
+                        <td>Activity 1</td>
+                        <td>A1</td>
+                        <td><input type="text" name="a1w" id="act1weight"></td>
+                        <td>
+                            <input type="text" name="g1" id="grade1">
+                            /
+                            <input type="text" name="g1total" id="grade1total">
+                        </td>
+                        <td id="a1percent"></td>
+                    </tr>
+                    <tr>
+                        <td>Activity 2</td>
+                        <td>A2</td>
+                        <td><input type="text" name="a2w" id="act2weight"></td>
+                        <td>
+                            <input type="text" name="g2" id="grade2">
+                            /
+                            <input type="text" name="g2total" id="grade2total">
+                        </td>
+                        <td id="a2percent"></td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+                <button class="button addact">ADD ACTIVITY</button>
+            </p>
+            <h2 class="second">Result</h2>
+            <p align="right">
+                <button class="button weighted">WEIGHTED</button>
+                <button class="button mean">MEAN</button>
+            </p>
+        </section>
+                <!-- <form action="index.html" method="post">
+                    <input type="text" name="fname" value="" placeholder="NAME">
+                    <input type="password" name="pwd" value="">
+                    <input type="email" name="" value="" required>
+                    <input type="number" name="" value=""> 
+                    <input type="submit" name="submit" value="SUBMIT!!!">
+                </form> -->
+        <footer id="foot"></footer>
+    </body>
+    
+</html>
+
+
+
+
+
+
