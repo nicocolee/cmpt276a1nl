@@ -15,15 +15,17 @@ function addActivity()
    
     
 //function to calculate percentage of each activity
-function calculatePercent(x) {
-    var actualGrade = document.getElementsByName("actualGrade");
-    var maxGrade = document.getElementsByName("maxGrade");
-    var percent = actualGrade/maxGrade;
-    percent.addEventListener("percent", calculatePercent)
+document.getElementsByClassName("actualGrade").onchange = function (x) {
+    log.document.
+    ng-model
+    // var actualGrade = x.paren.getElementsByName("actualGrade");
+    // var maxGrade = document.getElementsByName("maxGrade");
+    // var percent = actualGrade/maxGrade;
+    // percent.addEventListener("percent", calculatePercent)
     
-    var tr = document.getElementById("sampleRow");
-    tr.cells[4].innerHTML = percent;
-    log.textContent = percent.target.value;
+    // var tr = document.getElementById("sampleRow");
+    // tr.cells[4].innerHTML = percent;
+    // log.textContent = percent.target.value;
     
 
 }
