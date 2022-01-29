@@ -39,16 +39,27 @@
                     <th>Grade</th>
                     <th>Percent</th>
                 </tr>
-                <tr id="copyRow">
+                <tr id="sampleRow" style="display:none;">
                     <td>Activity 1</td>
                     <td>A1</td>
                     <td><input type="text" name="a1w" id="act1weight"></td>
                     <td>
-                        <input type="text" name="g1" id="grade1">
+                        <input type="text" name="actualGrade" onchange="calculatePercent(this)">
                         /
-                        <input type="text" name="g1total" id="grade1total">
+                        <input type="text" name="maxGrade" onchange="calculatePercent(this)">
                     </td>
-                    <td id="a1percent"></td>
+                    <td name="percent"></td>
+                </tr>
+                <tr>
+                    <td>Activity 1</td>
+                    <td>A1</td>
+                    <td><input type="text" name="a1w" id="act1weight"></td>
+                    <td>
+                        <input type="text" name="actualGrade">
+                        /
+                        <input type="text" name="maxGrade">
+                    </td>
+                    <td name="percent"></td>
                 </tr>
                 <tr>
                     <td>Activity 2</td>
@@ -59,7 +70,7 @@
                         /
                         <input type="text" name="g2total" id="grade2total">
                     </td>
-                    <td id="a2percent"></td>
+                    <td name="percent"></td>
                 </tr>
                 <tr>
                     <td>Activity 3</td>
@@ -70,7 +81,7 @@
                         /
                         <input type="text" name="" id="">
                     </td>
-                    <td id="a2percent"></td>
+                    <td name="percent"></td>
                 </tr>
                 <tr>
                     <td>Activity 4</td>
@@ -81,25 +92,19 @@
                         /
                         <input type="text" name="" id="">
                     </td>
-                    <td id="a2percent"></td>
+                    <td name="percent"></td>
                 </tr>
             </table>
             <p>
                 <button class="button add" onclick="addActivity()">ADD ACTIVITY</button>
             </p>
             <h2 class="second">Result</h2>
+            <p id="result"></p>
             <p align="right">
                 <button class="button weighted">WEIGHTED</button>
-                <button class="button mean">MEAN</button>
+                <button class="button mean" onclick="calculateMean()">MEAN</button>
             </p>
         </section>
-                <!-- <form action="index.html" method="post">
-                    <input type="text" name="fname" value="" placeholder="NAME">
-                    <input type="password" name="pwd" value="">
-                    <input type="email" name="" value="" required>
-                    <input type="number" name="" value=""> 
-                    <input type="submit" name="submit" value="SUBMIT!!!">
-                </form> -->
         <footer id="foot"></footer>
     </body>
     
