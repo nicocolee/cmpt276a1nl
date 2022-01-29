@@ -2,54 +2,90 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Grade Calculator</title>
-        <link rel="stylesheet" href="./stylesheets/style.css">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./calculator.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="calculator.js" defer></script>
     </head>
     
     <body>
-        <div border-width:thick ></div>
         <section>
-        <header>
-            <h1 class="first">Grade Calculator</h1>
-        </header>
+        <h1 class="first">Grade Calculator</h1>
+        <div class="bg"></div>
         <main>
             <h2 class="second">Activities</h2>
             <p>Give grades to the numeric activities:</p><br>
-            <div>
-                <table>
-                    <tr>
-                        <th>Name</th>
-                        <th>Short Name</th>
-                        <th>Weight</th>
-                        <th>Grade</th>
-                        <th>Percent</th>
-                    </tr>
-                    <tr>
-                        <td>Activity 1</td>
-                        <td>A1</td>
-                        <td><input type="text" name="a1w" id="act1weight"></td>
-                        <td>
-                            <input type="text" name="g1" id="grade1">
-                            /
-                            <input type="text" name="g1total" id="grade1total">
-                        </td>
-                        <td id="a1percent"></td>
-                    </tr>
-                    <tr>
-                        <td>Activity 2</td>
-                        <td>A2</td>
-                        <td><input type="text" name="a2w" id="act2weight"></td>
-                        <td>
-                            <input type="text" name="g2" id="grade2">
-                            /
-                            <input type="text" name="g2total" id="grade2total">
-                        </td>
-                        <td id="a2percent"></td>
-                    </tr>
-                </table>
-            </div>
+            <!-- <table id="tbl">
+                <tr>
+                    <td><input type="text" name="links" /></td>
+                    <td><input type="text" name="keywords" /></td> 
+                    <td><input type="text" name="violationtype" /></td>   
+                    <td><input type="submit" class="button" value="Add another line" onclick="addField(this);" /></td>          
+                </tr>
+            </table> -->
+            <!-- <table id="myTable">
+                <tr>
+                    <td><input type="text" name="links"></td>
+                    <td><input type="text" name="keywords"></td>
+                    <td><input type="text" name="violationtype"></td>
+                    <td><input type="button" class="button" value="Add another line" onclick="addField();"></td>
+                </tr>
+            </table> -->
+            <table id="tbl">
+                <tr>
+                    <th>Name</th>
+                    <th>Short Name</th>
+                    <th>Weight</th>
+                    <th>Grade</th>
+                    <th>Percent</th>
+                </tr>
+                <tr id="copyRow">
+                    <td>Activity 1</td>
+                    <td>A1</td>
+                    <td><input type="text" name="a1w" id="act1weight"></td>
+                    <td>
+                        <input type="text" name="g1" id="grade1">
+                        /
+                        <input type="text" name="g1total" id="grade1total">
+                    </td>
+                    <td id="a1percent"></td>
+                </tr>
+                <tr>
+                    <td>Activity 2</td>
+                    <td>A2</td>
+                    <td><input type="text" name="a2w" id="act2weight"></td>
+                    <td>
+                        <input type="text" name="g2" id="grade2">
+                        /
+                        <input type="text" name="g2total" id="grade2total">
+                    </td>
+                    <td id="a2percent"></td>
+                </tr>
+                <tr>
+                    <td>Activity 3</td>
+                    <td>A3</td>
+                    <td><input type="text" name="" id=""></td>
+                    <td>
+                        <input type="text" name="" id="">
+                        /
+                        <input type="text" name="" id="">
+                    </td>
+                    <td id="a2percent"></td>
+                </tr>
+                <tr>
+                    <td>Activity 4</td>
+                    <td>A4</td>
+                    <td><input type="text" name="" id=""></td>
+                    <td>
+                        <input type="text" name="" id="">
+                        /
+                        <input type="text" name="" id="">
+                    </td>
+                    <td id="a2percent"></td>
+                </tr>
+            </table>
             <p>
-                <button class="button addact">ADD ACTIVITY</button>
+                <button class="button add" onclick="addActivity()">ADD ACTIVITY</button>
             </p>
             <h2 class="second">Result</h2>
             <p align="right">
