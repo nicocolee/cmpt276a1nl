@@ -42,57 +42,57 @@
                 <tr id="sampleRow" style="display:none;">
                     <td>Activity 1</td>
                     <td>A1</td>
-                    <td><input type="text" class="a1w" id="act1weight"></td>
+                    <td><input type="text" class="weight"></td>
                     <td>
-                        <input type="text" class="actualGrade" onchange="calculatePercent(this)">
+                        <input type="text" class="grade" name="actualGrade">
                         /
-                        <input type="text" class="maxGrade" onchange="calculatePercent(this)">
+                        <input type="text" class="grade" name="maxGrade">
                     </td>
                     <td class="percent"></td>
                 </tr>
                 <tr>
                     <td>Activity 1</td>
                     <td>A1</td>
-                    <td><input type="text" name="a1w" id="act1weight"></td>
+                    <td><input type="text" class="weight"></td>
                     <td>
-                        <input type="text" name="actualGrade">
+                        <input type="text" class="grade" name="actualGrade">
                         /
-                        <input type="text" name="maxGrade">
+                        <input type="text" class="grade" name="maxGrade">
                     </td>
-                    <td name="percent"></td>
+                    <td class="percent"></td>
                 </tr>
                 <tr>
                     <td>Activity 2</td>
                     <td>A2</td>
-                    <td><input type="text" name="a2w" id="act2weight"></td>
+                    <td><input type="text" class="weight"></td>
                     <td>
-                        <input type="text" name="g2" id="grade2">
+                        <input type="text" class="grade" name="actualGrade">
                         /
-                        <input type="text" name="g2total" id="grade2total">
+                        <input type="text" class="grade" name="maxGrade">
                     </td>
-                    <td name="percent"></td>
+                    <td class="percent"></td>
                 </tr>
                 <tr>
                     <td>Activity 3</td>
                     <td>A3</td>
-                    <td><input type="text" name="" id=""></td>
+                    <td><input type="text" class="weight"></td>
                     <td>
-                        <input type="text" name="" id="">
+                        <input type="text" class="grade" name="actualGrade">
                         /
-                        <input type="text" name="" id="">
+                        <input type="text" class="grade" name="maxGrade">
                     </td>
-                    <td name="percent"></td>
+                    <td class="percent"></td>
                 </tr>
                 <tr>
                     <td>Activity 4</td>
                     <td>A4</td>
-                    <td><input type="text" name="" id=""></td>
+                    <td><input type="text" class="weight"></td>
                     <td>
-                        <input type="text" name="" id="">
+                        <input type="text" class="grade" name="actualGrade">
                         /
-                        <input type="text" name="" id="">
+                        <input type="text" class="grade" name="maxGrade">
                     </td>
-                    <td name="percent"></td>
+                    <td class="percent"></td>
                 </tr>
             </table>
             <p>
@@ -101,7 +101,7 @@
             <h2 class="second">Result</h2>
             <p id="result"></p>
             <p align="right">
-                <button class="button weighted">WEIGHTED</button>
+                <button class="button weighted" onclick="calculateWeighted()">WEIGHTED</button>
                 <button class="button mean" onclick="calculateMean()">MEAN</button>
             </p>
         </section>
